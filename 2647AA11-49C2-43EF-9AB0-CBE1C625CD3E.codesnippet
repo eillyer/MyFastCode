@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYREMOVENULL</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define kRemoveNull(value)\
+({id tmp;\
+if ([value isKindOfClass:[NSNull class]])\
+tmp = nil;\
+else\
+tmp = value;\
+tmp;\
+})\</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2647AA11-49C2-43EF-9AB0-CBE1C625CD3E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>将值放入（）</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>排空处理</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

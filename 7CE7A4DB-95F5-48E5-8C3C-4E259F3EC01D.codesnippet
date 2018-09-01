@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYRUNTIMESENDMSG</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;objc/runtime.h&gt;
+#import &lt;objc/message.h&gt;
+SEL net = NSSelectorFromString(@"&lt;#netWorking#&gt;");
+void (*action)(id, SEL,&lt;#参数#&gt;) = (void (*)(id, SEL，&lt;#参数#&gt;))objc_msgSend;
+            action(self.superVC, net,&lt;#参数#&gt;);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7CE7A4DB-95F5-48E5-8C3C-4E259F3EC01D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>运行时消息发送</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>消息发送</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

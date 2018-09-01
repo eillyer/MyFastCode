@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTCOLLECTIONDELEGATE</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row);
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {
+        let cell:&lt;#IntelliGentCell#&gt; = collectionView.dequeueReusableCell(withReuseIdentifier: "&lt;#IntelliGentCell#&gt;", for: indexPath) as! &lt;#IntelliGentCell#&gt;;
+        return cell;
+    }
+    func numberOfSections(in collectionView: UICollectionView) -&gt; Int {
+        return 1;
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
+        return 4;
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -&gt; UICollectionReusableView {
+        
+        if kind == UICollectionElementKindSectionHeader {
+            var headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerId", for: indexPath);
+            if headerView == nil {
+                headerView = UICollectionReusableView();
+            }
+            headerView.backgroundColor = UIColor.gray;
+            
+            return headerView;
+        }else if (kind == UICollectionElementKindSectionFooter){
+            var footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "footerID", for: indexPath);
+            if footerView == nil {
+                footerView = UICollectionReusableView();
+                
+            }
+            footerView.backgroundColor = .lightGray;
+            return footerView;
+            
+        }
+//        return NSNull();
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -&gt; Bool {
+        return true;
+    }
+    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -&gt; CGSize {
+        return CGSize.init(width: cellwidth, height: cellheight);
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -&gt; UIEdgeInsets {
+        return UIEdgeInsetsMake(5, 5, 5, 5);
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -&gt; CGFloat {
+        return 5.0;
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -&gt; CGFloat {
+        return 5.0;
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -&gt; CGSize {
+        return CGSize.init(width: 100, height: 100);
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -&gt; CGSize {
+        return CGSize.init(width: 100, height: 100);
+    }
+
+
+/*
+ - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+ {
+ return YES;
+ }
+ 
+ // 点击高亮
+ - (void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+ {
+ UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+ cell.backgroundColor = [UIColor greenColor];
+ }
+ 
+ 
+ // 选中某item
+ - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+ {
+ 
+ }
+ 
+ 
+ // 长按某item，弹出copy和paste的菜单
+ - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath
+ {
+ return YES;
+ }
+ 
+ // 使copy和paste有效
+ - (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(nullable id)sender
+ {
+ if ([NSStringFromSelector(action) isEqualToString:@"copy:"] || [NSStringFromSelector(action) isEqualToString:@"paste:"])
+ {
+ return YES;
+ }
+ 
+ return NO;
+ }
+ 
+ //
+ - (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(nullable id)sender
+ {
+ if([NSStringFromSelector(action) isEqualToString:@"copy:"])
+ {
+ //      NSLog(@"-------------执行拷贝-------------");
+ [_collectionView performBatchUpdates:^{
+ [_section0Array removeObjectAtIndex:indexPath.row];
+ [_collectionView deleteItemsAtIndexPaths:@[indexPath]];
+ } completion:nil];
+ }
+ else if([NSStringFromSelector(action) isEqualToString:@"paste:"])
+ {
+ NSLog(@"-------------执行粘贴-------------");
+ }
+ }
+ */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8DDDD43C-C806-4E64-8E3B-7B5DBD53D947</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>图代理</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>collection代理</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTBINPRO</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    typealias closureBlock = (String,String,String) -&gt; Void
+    var postValueBlock:closureBlock?
+        
+    {//使用
+        if postValueBlock != nil {
+            postValueBlock!("传值到上一页","sadf","asdf")
+        }
+    }
+{
+    //调用
+    self.类.postValueBlock = {(_ num1:Int,_ num2:Int) -&gt; (返回值) in
+        print("asdf");
+        
+    }
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>13F53560-3CE4-40ED-B021-CCF709128D4D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>闭包的声明和使用</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>闭包申明和使用</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

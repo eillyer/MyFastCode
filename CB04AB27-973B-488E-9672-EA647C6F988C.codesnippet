@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYGCDSHUN</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>dispatch_queue_t serielQueue = dispatch_queue_create("myQueue", DISPATCH_QUEUE_SERIAL);
+                    dispatch_sync(serielQueue, ^{
+                        &lt;#调用方法#&gt;
+                    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CB04AB27-973B-488E-9672-EA647C6F988C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>gcd排队执行</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GCD先进先出队列</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

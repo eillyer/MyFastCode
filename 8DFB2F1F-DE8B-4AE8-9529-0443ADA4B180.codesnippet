@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYJIETUSHIJIAN</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIImage *)imageWithScreenshot
+    {
+        
+        //1.注册通知截图的事件 需要添加箭头事件
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(screenShot) name:UIApplicationUserDidTakeScreenshotNotification object:nil];
+        
+        CGSize imageSize = CGSizeZero;
+        UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+        if (UIInterfaceOrientationIsPortrait(orientation))
+        imageSize = [UIScreen mainScreen].bounds.size;
+        else
+        imageSize = CGSizeMake([UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
+        
+        UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        for (UIWindow *window in [[UIApplication sharedApplication] windows])
+        {
+            CGContextSaveGState(context);
+            CGContextTranslateCTM(context, window.center.x, window.center.y);
+            CGContextConcatCTM(context, window.transform);
+            CGContextTranslateCTM(context, -window.bounds.size.width * window.layer.anchorPoint.x, -window.bounds.size.height * window.layer.anchorPoint.y);
+            if (orientation == UIInterfaceOrientationLandscapeLeft)
+            {
+                CGContextRotateCTM(context, M_PI_2);
+                CGContextTranslateCTM(context, 0, -imageSize.width);
+            }
+            else if (orientation == UIInterfaceOrientationLandscapeRight)
+            {
+                CGContextRotateCTM(context, -M_PI_2);
+                CGContextTranslateCTM(context, -imageSize.height, 0);
+            } else if (orientation == UIInterfaceOrientationPortraitUpsideDown) {
+                CGContextRotateCTM(context, M_PI);
+                CGContextTranslateCTM(context, -imageSize.width, -imageSize.height);
+            }
+            if ([window respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)])
+            {
+                [window drawViewHierarchyInRect:window.bounds afterScreenUpdates:YES];
+            }
+            else
+            {
+                [window.layer renderInContext:context];
+            }
+            CGContextRestoreGState(context);
+        }
+        
+        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        NSData *imageData = UIImagePNGRepresentation(image);
+        
+        return [UIImage imageWithData:imageData];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8DFB2F1F-DE8B-4AE8-9529-0443ADA4B180</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>截图事件</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>截图事件</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYNIBCELL</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UINib &lt;#*nib1#&gt; = [UINib nibWithNibName:@"&lt;#ReleaseDetailsBaseCell#&gt;" bundle:[NSBundle mainBundle]];
+[self.tableView registerNib:&lt;#nib1#&gt; forCellReuseIdentifier:@"&lt;#ReleaseDetailsBaseCell#&gt;"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1D34A8EC-F80C-45AA-8E6D-FEDAE02DE9C0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>注册cell</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>注册cell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

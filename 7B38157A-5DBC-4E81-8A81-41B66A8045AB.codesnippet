@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYLONGACTION</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//长按手势
+- (void)cellLongPress:(UIGestureRecognizer *)recognizer{
+    if (recognizer.state == UIGestureRecognizerStateBegan) {
+        CGPoint location = [recognizer locationInView:self.tableView];
+        self.selectIndexPath = [self.tableView indexPathForRowAtPoint:location];
+        &lt;#InspectionCell#&gt; *cell = (&lt;#InspectionCell#&gt; *)recognizer.view;
+        //这里把cell做为第一响应(cell默认是无法成为responder,需要重写canBecomeFirstResponder方法)
+        [cell becomeFirstResponder];
+        // 创建提示框
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"编辑" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *send1 = [UIAlertAction actionWithTitle:&lt;#@"编辑内容"#&gt; style:0 handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        UIAlertAction *send2 = [UIAlertAction actionWithTitle:&lt;#@"删除数据"#&gt; style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        UIAlertAction *send3 = [UIAlertAction actionWithTitle:&lt;#@"取消"#&gt; style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        [alert addAction:send1];
+        [alert addAction:send2];
+        [alert addAction:send3];
+        [self&lt;#.navigationController#&gt; presentViewController:alert animated:YES completion:nil];
+        NSLog(@"%ld",self.selectIndexPath.row);
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7B38157A-5DBC-4E81-8A81-41B66A8045AB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>长按的方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>长按手势的动作</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

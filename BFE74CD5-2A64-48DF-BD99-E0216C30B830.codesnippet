@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYNIBITEM</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    HomeGoodsItemFlowLayout *flowLayout = [[HomeGoodsItemFlowLayout alloc] initWithCount:3 width:kScreenWidth-self.tableView.frame.size.width height:130 isH:YES];
+    [self.collectionView setCollectionViewLayout:flowLayout];
+    UINib *nib1 = [UINib nibWithNibName:@"HeaderViewItem" bundle:[NSBundle mainBundle]];
+    [self.collectionView registerNib:nib1 forCellWithReuseIdentifier:@"HeaderViewItem"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BFE74CD5-2A64-48DF-BD99-E0216C30B830</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>flowlayout</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>item设置</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYREMOVEUSER</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //清空默认数据
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    NSDictionary *dic = [user dictionaryRepresentation];
+    for (id key in dic) {
+        [user removeObjectForKey:key];
+    }
+    [user synchronize];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5742C4E6-637C-4F1B-9163-471077DE3131</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>清空默认值</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>清空User的默认值</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

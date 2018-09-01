@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTNIBCELL</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let &lt;#nib#&gt; = UINib(nibName: "&lt;#GoodsCarMainCell#&gt;", bundle: Bundle.main)
+tableView.register(&lt;#nib#&gt;, forCellReuseIdentifier: "&lt;#GoodsCarMainCell#&gt;")</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5204A5B2-602F-4517-918F-F9A8D37AB904</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swift注册cell</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swift注册cell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

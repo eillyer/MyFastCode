@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTRED</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let view = UIView.init(frame: .init(x: 10, y: 210, width: 200, height: 40));
+//        view.setCAColorStarToEnd(starColor:.white, endColor: .blue, isH: false)
+        view.backgroundColor = .red;
+        self.view.addSubview(view);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>92F7237C-D629-4D21-A9EE-8838D4BB206C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>红方块</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>红方块</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

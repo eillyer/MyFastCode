@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTNAVIRIGHTBTN</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let btn = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30));
+        btn.backgroundColor = UIColor.blue;
+        btn.addTarget(self, action:#selector(btnAction(_:)), for: UIControlEvents.touchUpInside);
+        btn.setImage(UIImage.init(named: "&lt;#11#&gt;"), for: UIControlState.normal);
+        btn.setImage(UIImage.init(named: "&lt;#22#&gt;"), for: UIControlState.selected);
+        self.navigationItem.setRightBarButton(UIBarButtonItem.init(customView: btn), animated:false);
+        
+    }
+    @objc func btnAction (_ sender:UIButton)  {
+        
+        
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E8663189-1939-4616-911E-5C8B807E6BE0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>导航栏右按钮</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>导航栏右按钮</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

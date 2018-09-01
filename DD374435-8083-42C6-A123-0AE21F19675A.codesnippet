@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTTABLEDELEGATE</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // MARK: - tableView delegate -
+    func numberOfSections(in tableView: UITableView) -&gt; Int {
+        return &lt;#1#&gt;;
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        return &lt;#3#&gt;;
+    }
+    //cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        let cell:&lt;#GoodsCarMainCell#&gt; = tableView.dequeueReusableCell(withIdentifier: "#&lt;GoodsCarMainCell#&gt;") as! &lt;#GoodsCarMainCell#&gt;;
+        
+        if  let dict = self.arr[indexPath.row] as? [String:Any]{
+            cell.date.text = dict["created_at"] as? String
+            cell.num.text = dict["money"] as? String
+            cell.content.text = dict["remark"] as? String
+        }
+        
+        return cell
+    }
+    
+    //table的cell高度，可选方法
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
+        return &lt;#100#&gt;;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("asdf");
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DD374435-8083-42C6-A123-0AE21F19675A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>表代理Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>表代理(tableView)</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTTABLENETBACK</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>                if success {
+                    if dict["data"] != nil {
+                        if let dataArr = dict["data"] as? [Any] {
+                            for dict in dataArr {
+                                self.arr.append(dict);
+                            }
+                        }
+                        self.tableView.reloadData()
+                    }
+                }
+                self.tableView.mj_header.endRefreshing();
+                self.tableView.mj_footer.endRefreshing();
+                if self.arr.count == 0 {
+                    self.tableView.mj_footer.endRefreshingWithNoMoreData();
+                }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FA5F6953-26B3-4D0F-BEF1-B04755734402</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>添加了判断和上下拉</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>table的网络返回</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

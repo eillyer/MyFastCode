@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTBTN</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let btn = UIButton.init(frame: CGRect.init(x: 20, y: 300, width: 30, height: 30))
+        btn.backgroundColor = UIColor.blue
+        //        btn1.addTarget(self, action:#selector(tapped1(_:)), for:.touchUpInside)
+        btn.addTarget(self, action:#selector(btnAction(_:)), for: UIControlEvents.touchUpInside)
+        
+        self.view.addSubview(btn)
+    }
+    @objc func btnAction (_ sender:UIButton)  {
+        print("22"+"11")
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4A32AE79-8C96-4B31-ADEA-F1E9651CD50C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建按钮</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>按钮</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

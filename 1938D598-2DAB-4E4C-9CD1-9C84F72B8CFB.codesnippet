@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTGCBING</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        for i in 1...10 {
+            DispatchQueue.global().async {
+                //全局并发异步
+                Thread.sleep(forTimeInterval: 2)
+                print("线程\(Thread.current)正在执行\(i)号任务")
+            }
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1938D598-2DAB-4E4C-9CD1-9C84F72B8CFB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>同时进行多操作</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>并发异步</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

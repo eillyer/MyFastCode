@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTXIBVIEW</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class func CustomView() -&gt; &lt;#UpdataGoodsCarHeader1#&gt; {
+        let view = UINib.init(nibName: "&lt;#UpdataGoodsCarHeader1#&gt;", bundle: Bundle.main).instantiate(withOwner: self, options: nil).last;
+return view as! &lt;#UpdataGoodsCarHeader1#&gt;
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B0286F7D-D68E-47F2-A3D5-FB579EBDF28E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>xib的view类方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>xib的View累方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

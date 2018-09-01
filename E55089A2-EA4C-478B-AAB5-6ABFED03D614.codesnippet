@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYNAVISEARCHBAR</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth-50, 35)];//allocate titleView
+    UIColor *color =  self.navigationController.navigationBar.barTintColor;
+    [titleView setBackgroundColor:color];
+    UISearchBar *searchBar = [[UISearchBar alloc] init];
+    searchBar.delegate = self;
+    searchBar.frame = CGRectMake(0, 0, kScreenWidth-50, 35);
+    searchBar.backgroundColor = color;
+    [searchBar setR:18 wid:8 color:[UIColor whiteColor]];
+    searchBar.placeholder = @"|搜索珠宝";
+    [titleView addSubview:searchBar];
+    [self.navigationItem.titleView sizeToFit];
+    self.navigationItem.titleView = titleView;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E55089A2-EA4C-478B-AAB5-6ABFED03D614</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>导航栏所搜</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>导航栏搜索</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

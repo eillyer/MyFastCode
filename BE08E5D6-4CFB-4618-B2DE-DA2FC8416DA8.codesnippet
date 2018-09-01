@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYENUM</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>typedef NS_ENUM(NSInteger,&lt;#定义名#&gt;) {
+    &lt;#枚举1#&gt;,
+    &lt;#枚举2#&gt;
+};
+@property (nonatomic,assign) &lt;#定义名#&gt; &lt;#属性名#&gt;;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BE08E5D6-4CFB-4618-B2DE-DA2FC8416DA8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>属性枚举</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>枚举定义属性</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

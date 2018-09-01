@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYSWIFTGCDCHUAN</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let queue = DispatchQueue(label: "com.custom.thread")
+        queue.async {
+            //异步串行队列
+            for i in 1...10 {
+                    Thread.sleep(forTimeInterval: 2)
+                    print("线程\(Thread.current)正在执行\(i)号任务")
+            }
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9391FCCB-E2B2-44AF-AA0C-CCBC8E0747F2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>顺序执行在子线程（sync为主线程会卡死）</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>异步串行队列</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

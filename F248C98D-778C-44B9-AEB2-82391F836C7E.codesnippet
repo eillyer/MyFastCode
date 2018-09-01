@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYBLOCKPROPERTY</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>typedef void(^sendLocationValue)(NSString *jingdu,NSString *weidu,CLPlacemark *weizhi,BOOL isOK,NSString *erro);
+
+@property (nonatomic,copy) sendLocationValue sendValueBlock;//copy 将 block 从栈区 copy 到堆区,已提供使用</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F248C98D-778C-44B9-AEB2-82391F836C7E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>属性里面传参数</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>block属性申明</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYGCDFORIN</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    //创建一个定时器
+    //此处的time 执行的时候需要添加属性值，否则会被提前释放，如
+    //@property (nonatomic,strong) dispatch_source_t time;
+    dispatch_source_t time = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    //设置timer GCD 时间单位为纳秒
+    dispatch_source_set_timer(time, DISPATCH_TIME_NOW, 1.0*NSEC_PER_SEC, 0);
+    //设置回调
+    dispatch_source_set_event_handler(time, ^{
+        NSLog(@"======= %@",[NSThread currentThread]);
+    });
+    //启动
+    dispatch_resume(time);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DD838F6E-FC6C-4A59-9871-4AA11BD3D0E3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>循环执行方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GCD循环执行</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

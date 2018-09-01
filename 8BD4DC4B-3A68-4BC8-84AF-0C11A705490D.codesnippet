@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYMJREFRESH</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    __weak typeof(self) weakSelf = self;
+    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
+        
+        [weakSelf settingNetDataPage:1];
+        //        weakSelf.page = 1;
+    }];
+    
+    [header setTitle:@"下拉刷新数据↓" forState:MJRefreshStateIdle];
+    [header setTitle:@"加载中..." forState:MJRefreshStateRefreshing];
+    [header setTitle:@"准备加载数据..." forState:MJRefreshStatePulling];
+    header.lastUpdatedTimeLabel.hidden = YES;
+    
+    self.tableView.mj_header = header;
+    
+    
+    MJRefreshAutoGifFooter *footer = [MJRefreshAutoGifFooter footerWithRefreshingBlock:^{
+        
+        [weakSelf settingNetDataPage:self.page];
+        
+    }];
+    [footer setTitle:@"加载更多" forState:MJRefreshStateIdle];
+    [footer setTitle:@"加载中..." forState:MJRefreshStateRefreshing];
+    [footer setTitle:@"准备加载数据" forState:MJRefreshStatePulling];
+    [footer setTitle:@"没有更多数据" forState:MJRefreshStateNoMoreData];
+    
+    
+    self.tableView.mj_footer = footer;
+    
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8BD4DC4B-3A68-4BC8-84AF-0C11A705490D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>表刷新数据</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>表上拉下拉</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
