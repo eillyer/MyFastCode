@@ -6,7 +6,7 @@
 	<string>MYREMOVEUSER</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>    //清空默认数据
@@ -21,9 +21,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>清空默认值</string>
+	<string>清空默认值 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>清空User的默认值</string>
+	<string>MY清空User的默认值</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

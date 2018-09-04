@@ -6,20 +6,20 @@
 	<string>MYBLOCKACTION</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (void)getStrBlock:(void (^)(NSString *))str{
-    str(self.chooseStr);
+    str(self.chooseStr);//给self.chooseStr 赋值
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>DF751589-2C85-4CE5-A04B-FAEAB84C1330</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>通过str</string>
+	<string>通过str  OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>block方法</string>
+	<string>MY block方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -6,7 +6,7 @@
 	<string>MYGCDSLEEP</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>        __weak typeof (self) weakSelf = self;
@@ -19,9 +19,9 @@ dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(&lt;#执�
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>gcd格式延迟执行</string>
+	<string>gcd格式延迟执行 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>GCD延迟执行</string>
+	<string>MY GCD延迟执行</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

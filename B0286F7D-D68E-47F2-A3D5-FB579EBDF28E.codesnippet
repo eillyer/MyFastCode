@@ -16,11 +16,11 @@ return view as! &lt;#UpdataGoodsCarHeader1#&gt;
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B0286F7D-D68E-47F2-A3D5-FB579EBDF28E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>xib的view类方法</string>
+	<string>xib的view类方法 swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>xib的View累方法</string>
+	<string>MY xib的View累方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

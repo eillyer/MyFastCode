@@ -20,11 +20,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>9391FCCB-E2B2-44AF-AA0C-CCBC8E0747F2</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>顺序执行在子线程（sync为主线程会卡死）</string>
+	<string>顺序执行在子线程（sync为主线程会卡死）swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>异步串行队列</string>
+	<string>MY异步串行队列</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

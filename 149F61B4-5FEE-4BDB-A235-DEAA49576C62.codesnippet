@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYSWOFTGCDASYNC</string>
+	<string>MYSWiFTGCDASYNC</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -21,11 +21,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>149F61B4-5FEE-4BDB-A235-DEAA49576C62</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>开辟子线程回调主线程</string>
+	<string>开辟子线程回调主线程 swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>GCD子线程回调</string>
+	<string>MY GCD子线程回调</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -65,9 +65,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>截图事件</string>
+	<string>截图事件监听 OC </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>截图事件</string>
+	<string>MY截图事件</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

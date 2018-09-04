@@ -19,9 +19,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>需要申明一个类方法</string>
+	<string>需要申明一个类方法OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>给view创建xib</string>
+	<string>MY给view创建xib</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

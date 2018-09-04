@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYbtn</string>
+	<string>MYBTN</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -14,15 +14,15 @@
 [btn setTitle:&lt;#@"按钮"#&gt; forState:UIControlStateNormal];
 [btn setBackgroundColor:[UIColor redColor]];
 
-    [self.view addSubview:btn];</string>
+[&lt;#self.view#&gt; addSubview:btn];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1F8CC9C7-0F14-4ABA-BB31-8F608DEA5B15</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>添加一个按钮</string>
+	<string>添加一个按钮OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>按钮</string>
+	<string>MY按钮</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

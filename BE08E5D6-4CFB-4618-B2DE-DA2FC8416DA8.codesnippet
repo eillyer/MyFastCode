@@ -6,7 +6,7 @@
 	<string>MYENUM</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>typedef NS_ENUM(NSInteger,&lt;#定义名#&gt;) {
@@ -19,9 +19,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>属性枚举</string>
+	<string>属性枚举 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>枚举定义属性</string>
+	<string>MY枚举定义属性</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

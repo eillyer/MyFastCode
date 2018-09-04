@@ -14,11 +14,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1D34A8EC-F80C-45AA-8E6D-FEDAE02DE9C0</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>注册cell</string>
+	<string>注册cell OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>注册cell</string>
+	<string>MY注册cell</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

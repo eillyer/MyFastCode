@@ -6,7 +6,7 @@
 	<string>MYGCDOPEN</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>    dispatch_async(dispatch_get_global_queue(0, 0), ^{
@@ -23,9 +23,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>子线程</string>
+	<string>子线程 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>GCD开辟子线程</string>
+	<string>MY GCD开辟子线程</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

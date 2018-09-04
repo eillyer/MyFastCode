@@ -44,9 +44,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>数据视图设置</string>
+	<string>数据视图设置OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>初始设置</string>
+	<string>MY初始设置</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

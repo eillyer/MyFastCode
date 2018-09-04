@@ -14,7 +14,7 @@
         //        btn1.addTarget(self, action:#selector(tapped1(_:)), for:.touchUpInside)
         btn.addTarget(self, action:#selector(btnAction(_:)), for: UIControlEvents.touchUpInside)
         
-        self.view.addSubview(btn)
+&lt;#self.view#&gt;.addSubview(btn)
     }
     @objc func btnAction (_ sender:UIButton)  {
         print("22"+"11")
@@ -24,9 +24,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>创建按钮</string>
+	<string>创建按钮swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>按钮</string>
+	<string>MY按钮</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

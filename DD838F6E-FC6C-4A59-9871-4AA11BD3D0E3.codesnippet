@@ -25,11 +25,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>DD838F6E-FC6C-4A59-9871-4AA11BD3D0E3</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>循环执行方法</string>
+	<string>循环执行方法 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>GCD循环执行</string>
+	<string>MY GCD循环执行</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

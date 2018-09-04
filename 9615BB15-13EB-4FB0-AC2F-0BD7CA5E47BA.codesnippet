@@ -6,7 +6,7 @@
 	<string>MYWEAKSELF</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>    __weak typeof (self) weakSelf = self;
@@ -16,9 +16,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>调用block的自己</string>
+	<string>调用block的自己 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>自己的弱指针</string>
+	<string>MY 自己的弱指针</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

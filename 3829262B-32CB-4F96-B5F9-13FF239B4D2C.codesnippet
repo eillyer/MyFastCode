@@ -28,9 +28,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>方法</string>
+	<string>方法 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>提示框方法</string>
+	<string>MY系统提示框方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

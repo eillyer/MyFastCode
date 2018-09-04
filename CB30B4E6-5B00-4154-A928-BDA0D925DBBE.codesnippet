@@ -15,9 +15,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>randomColor</string>
+	<string>随机色 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>随即颜色</string>
+	<string>MY随即颜色</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

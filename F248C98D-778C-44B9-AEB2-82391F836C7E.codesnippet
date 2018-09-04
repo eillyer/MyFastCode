@@ -6,20 +6,20 @@
 	<string>MYBLOCKPROPERTY</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef void(^sendLocationValue)(NSString *jingdu,NSString *weidu,CLPlacemark *weizhi,BOOL isOK,NSString *erro);
+	<string>typedef void(^&lt;#sendLocationValue#&gt;)(&lt;#NSString *jingdu,NSString *weidu,CLPlacemark *weizhi,BOOL isOK,NSString *erro#&gt;);
 
-@property (nonatomic,copy) sendLocationValue sendValueBlock;//copy 将 block 从栈区 copy 到堆区,已提供使用</string>
+@property (nonatomic,copy) &lt;#sendLocationValue#&gt; &lt;#sendValueBlock#&gt;;//copy 将 block 从栈区 copy 到堆区,已提供使用</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F248C98D-778C-44B9-AEB2-82391F836C7E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>属性里面传参数</string>
+	<string>属性里面传参数 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>block属性申明</string>
+	<string>MY block属性申明</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

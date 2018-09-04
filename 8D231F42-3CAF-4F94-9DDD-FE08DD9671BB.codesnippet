@@ -9,16 +9,21 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    pasteboard.string = self.num.text;</string>
+	<string>UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+pasteboard.string = &lt;#self.num.text#&gt;;
+if (pasteboard.string == nil) {
+    //        复制失败
+}else{
+    //        复制成功
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>8D231F42-3CAF-4F94-9DDD-FE08DD9671BB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>剪切拷贝</string>
+	<string>剪切拷贝 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>剪切拷贝</string>
+	<string>MY剪切拷贝</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

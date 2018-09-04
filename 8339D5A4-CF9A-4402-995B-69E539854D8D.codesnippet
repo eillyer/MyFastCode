@@ -47,9 +47,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>代理方法OC</string>
+	<string>代理方法 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>表代理(tableView)</string>
+	<string>MY 表代理(tableView)</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

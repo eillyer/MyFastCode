@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    UIImage *image = [UIImage imageNamed:@"顶部背景"];
+	<string>UIImage *image = [UIImage imageNamed:@"&lt;#顶部背景#&gt;"];
     image = [image resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeStretch];
     [self.navigationBar setBackgroundImage:image forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -17,9 +17,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>渐变色什么</string>
+	<string>渐变色什么 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>设置导航背景图片</string>
+	<string>MY设置导航背景图片</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

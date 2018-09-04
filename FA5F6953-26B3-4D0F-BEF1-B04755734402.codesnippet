@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYSWIFTTABLENETBACK</string>
+	<string>MYSWIFTNETBACK</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -27,11 +27,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>FA5F6953-26B3-4D0F-BEF1-B04755734402</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>添加了判断和上下拉</string>
+	<string>网络返回成功添加上拉下拉 swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>table的网络返回</string>
+	<string>MY table的网络返回</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

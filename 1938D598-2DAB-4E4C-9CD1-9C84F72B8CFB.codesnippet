@@ -21,9 +21,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>同时进行多操作</string>
+	<string>同时进行多操作swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>并发异步</string>
+	<string>MY并发异步</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

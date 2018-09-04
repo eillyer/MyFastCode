@@ -58,9 +58,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>流视图代理OC</string>
+	<string>流视图代理 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>表代理(CollectionView)</string>
+	<string>MY表代理(CollectionView)</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

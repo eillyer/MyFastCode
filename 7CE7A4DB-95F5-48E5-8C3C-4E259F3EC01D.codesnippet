@@ -17,11 +17,11 @@ void (*action)(id, SEL,&lt;#参数#&gt;) = (void (*)(id, SEL，&lt;#参数#&gt;)
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7CE7A4DB-95F5-48E5-8C3C-4E259F3EC01D</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>运行时消息发送</string>
+	<string>运行时消息发送 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>消息发送</string>
+	<string>MY消息发送</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

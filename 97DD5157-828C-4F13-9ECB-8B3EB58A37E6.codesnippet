@@ -32,9 +32,9 @@ self.collectionView.register(nib, forCellWithReuseIdentifier: "&lt;#T##String#&g
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>collection的布局</string>
+	<string>collection的布局swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>布局init方法</string>
+	<string>MY布局flowlaout init方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

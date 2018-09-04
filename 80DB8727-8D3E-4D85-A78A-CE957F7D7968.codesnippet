@@ -6,7 +6,7 @@
 	<string>MYUSERDEFAULTS</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string> [[NSUserDefaults standardUserDefaults] setObject:&lt;#值#&gt;forKey:&lt;#key#&gt;];
@@ -16,9 +16,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>基本设置</string>
+	<string>基本设置 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>用户默认</string>
+	<string>MY设置用户默认</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

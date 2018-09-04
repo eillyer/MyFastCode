@@ -26,9 +26,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>导航栏所搜</string>
+	<string>导航栏所搜OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>导航栏搜索</string>
+	<string>MY导航栏搜索</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

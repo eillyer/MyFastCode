@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYSWIFTBINPRO</string>
+	<string>MYSWIFTBIBAO</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -30,9 +30,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>闭包的声明和使用</string>
+	<string>闭包的声明和使用swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>闭包申明和使用</string>
+	<string>MY闭包申明和使用</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

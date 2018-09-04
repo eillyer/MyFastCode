@@ -14,11 +14,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>EE3B7DD4-B370-4329-B2CA-C70C44CFCE27</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>xib数组</string>
+	<string>xib数组 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>xib数组</string>
+	<string>MY xib数组</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

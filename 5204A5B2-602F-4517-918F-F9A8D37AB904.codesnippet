@@ -14,11 +14,11 @@ tableView.register(&lt;#nib#&gt;, forCellReuseIdentifier: "&lt;#GoodsCarMainCell
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5204A5B2-602F-4517-918F-F9A8D37AB904</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>swift注册cell</string>
+	<string>swift注册cell swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>swift注册cell</string>
+	<string>MY swift注册 tableview cell</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

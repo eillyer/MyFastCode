@@ -136,11 +136,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>8DDDD43C-C806-4E64-8E3B-7B5DBD53D947</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>图代理</string>
+	<string>图代理 swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>collection代理</string>
+	<string>MY collection代理</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

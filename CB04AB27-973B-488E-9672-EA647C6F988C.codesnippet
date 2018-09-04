@@ -6,7 +6,7 @@
 	<string>MYGCDSHUN</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>dispatch_queue_t serielQueue = dispatch_queue_create("myQueue", DISPATCH_QUEUE_SERIAL);
@@ -18,9 +18,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>gcd排队执行</string>
+	<string>gcd排队执行 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>GCD先进先出队列</string>
+	<string>MY GCD先进先出队列</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

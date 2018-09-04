@@ -20,9 +20,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>NSLog的DeBug</string>
+	<string>NSLog的DeBug swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>测试和正式的打印</string>
+	<string>MY测试和正式的打印</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

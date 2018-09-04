@@ -16,11 +16,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>BFE74CD5-2A64-48DF-BD99-E0216C30B830</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>flowlayout</string>
+	<string>初始collection OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>item设置</string>
+	<string>MY item设置</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

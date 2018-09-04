@@ -43,9 +43,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>表刷新数据</string>
+	<string>表刷新数据OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>表上拉下拉</string>
+	<string>MY表上拉下拉</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -16,9 +16,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>横竖屏</string>
+	<string>横竖屏swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>横竖屏单个view</string>
+	<string>MY横竖屏单个view</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

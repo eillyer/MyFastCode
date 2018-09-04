@@ -23,11 +23,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>BC06DD4C-BCFF-4F08-896E-2197DE705BC4</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MD5加密</string>
+	<string>MD5加密 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MD5加密</string>
+	<string>MY MD5加密</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYTONGZHIJIANTING</string>
+	<string>MYTONGZHI</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNotifi:) name:@"sendMSG" object:nil];
+	<string>// 发出通知
+[[NSNotificationCenter defaultCenter] postNotificationName:@"&lt;#loginSuccess#&gt;" object:@"&lt;#登陆成功发出通知，注册个推设备ID#&gt;" userInfo:nil];
+
+//接收通知 并且删除通知
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNotifi:) name:@"&lt;#sendMSG#&gt;" object:nil];
 
 }
 - (void)receiveNotifi:(NSNotification *)notifi{
@@ -19,16 +23,16 @@
     
 }
 - (void)dealloc{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"sendMSG" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"&lt;#sendMSG#&gt;" object:nil];
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E3A6488E-BA0B-49E2-884B-3D354640ABCC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>监听通知</string>
+	<string>通知 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>通知的监听</string>
+	<string>MY 通知</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
