@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYTUISONG</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //1创建本地通知
+    UILocalNotification *noti = [[UILocalNotification alloc] init];
+    //1.1设置弹出世间
+    noti.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
+    //1.2设置弹出内容
+    noti.alertBody = @"弹出内容：阿斯顿发斯蒂芬";
+    //1.3设置锁屏状态下显示的文字
+    noti.alertAction = @"快速打开";
+    
+    //1.4设置是否显示快速打开(默认yes)
+    noti.hasAction = NO;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C4969AE8-C752-4C11-B6BA-59598EC1827F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>本地推送 OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MY 本地推送</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

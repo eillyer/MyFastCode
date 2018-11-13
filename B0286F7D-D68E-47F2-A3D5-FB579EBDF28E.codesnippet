@@ -12,7 +12,34 @@
 	<string>class func CustomView() -&gt; &lt;#UpdataGoodsCarHeader1#&gt; {
         let view = UINib.init(nibName: "&lt;#UpdataGoodsCarHeader1#&gt;", bundle: Bundle.main).instantiate(withOwner: self, options: nil).last;
 return view as! &lt;#UpdataGoodsCarHeader1#&gt;
-    }</string>
+    }
+
+func loadSub() {
+    
+    self.backgroundColor = UIColor.black.withAlphaComponent(0.35);
+    self.frame = CGRect.init(x: 0, y: 0, width: KscreenWidth, height: KscrrenHeight)
+}
+func animationAlert(view:UIView) {
+    let popAnimation = CAKeyframeAnimation.init(keyPath: "transform");
+    popAnimation.duration = 0.4;
+    popAnimation.values = [
+        NSValue.init(caTransform3D: CATransform3DMakeScale(0.01, 0.01, 1.0)),
+        NSValue.init(caTransform3D: CATransform3DMakeScale(1.1, 1.1, 1.0)),
+        NSValue.init(caTransform3D: CATransform3DMakeScale(0.9, 0.9, 1.0)),
+        NSValue.init(caTransform3D: CATransform3DIdentity)
+    ];
+    popAnimation.keyTimes = [0.0,0.5,0.75,1.0];
+    popAnimation.timingFunctions = [
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseInEaseOut),
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseInEaseOut),
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseInEaseOut),
+    ]
+    view.layer.add(popAnimation, forKey: nil);
+}
+func show() {
+    UIApplication.shared.keyWindow?.addSubview(self);
+    self.animationAlert(view: self.subviews[1]);
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B0286F7D-D68E-47F2-A3D5-FB579EBDF28E</string>
 	<key>IDECodeSnippetLanguage</key>

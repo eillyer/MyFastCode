@@ -11,6 +11,14 @@
 	<key>IDECodeSnippetContents</key>
 	<string>//
 //  PrefixHeader.pch
+//  GitHubApp
+//
+//  Created by eillyer on 2018/10/22.
+//  Copyright © 2018年 eillyer. All rights reserved.
+//
+
+//
+//  PrefixHeader.pch
 //  TheCocoapodsAll
 //
 //  Created by eillyer on 2018/1/19.
@@ -44,8 +52,8 @@
 #define kMJRefreshNameReadly @"准备加载数据"
 
 // 颜色
-#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
-#define RGB(r, g, b) RGBA(r, g, b,1.0)
+#define kRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define kRGB(r, g, b) RGBA(r, g, b,1.0)
 
 //地图
 #define kMapZoom 8.345
@@ -55,21 +63,11 @@
 
 
 #import "UIImage+image.h"
+#import "NSString+NowDate.h"
+#import "NetWorkTo.h"
 
 
 #define kBannerArr @[@"banner2a",@"banner1a",@"banner3a",@"banner4a"]
-
-//网络类
-//#define kNetWorkingHeper [AFNetworkingHelper sharedAFNetworkingHelper]
-
-//如果release状态就不执行NSLog函数
-#ifndef __OPTIMIZE__
-#define NSLog(...) NSLog(__VA_ARGS__)
-#else
-# define NSLog(...) {}
-#endif
-
-#endif /* PrefixHeader_pch */
 
 
 //通用宏定义
@@ -114,19 +112,19 @@
 
 //property属性快速声明
 
-#define PropertyString(s) @property(nonatomic,copy)NSString * s
+#define kPropertyString(s) @property(nonatomic,copy)NSString * s
 
-#define PropertyNSInteger(s) @property(nonatomic,assign)NSIntegers
+#define kPropertyNSInteger(s) @property(nonatomic,assign)NSIntegers
 
-#define PropertyFloat(s) @property(nonatomic,assign)floats
+#define kPropertyFloat(s) @property(nonatomic,assign)floats
 
-#define PropertyLongLong(s) @property(nonatomic,assign)long long s
+#define kPropertyLongLong(s) @property(nonatomic,assign)long long s
 
-#define PropertyNSDictionary(s) @property(nonatomic,strong)NSDictionary * s
+#define kPropertyNSMutableDictionary(s) @property(nonatomic,strong)NSMutableDictionary * s
 
-#define PropertyNSArray(s) @property(nonatomic,strong)NSArray * s
+#define kPropertyNSArray(s) @property(nonatomic,strong)NSArray * s
 
-#define PropertyNSMutableArray(s) @property(nonatomic,strong)NSMutableArray * s
+#define kPropertyNSMutableArray(s) @property(nonatomic,strong)NSMutableArray * s
 
 ///IOS版本判断
 
@@ -139,6 +137,15 @@
 //-------------------打印日志-------------------------
 
 //DEBUG模式下打印日志,当前行
+//如果release状态就不执行NSLog函数
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+# define NSLog(...) {}
+#endif
+
+#endif /* PrefixHeader_pch */
+
 
 #ifdef DEBUG
 
@@ -155,6 +162,11 @@
 #define kNSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
 
 //颜色
+#define kMainColor [UIColor whiteColor]
+
+#define kTextColor [UIColor whiteColor]
+
+#define kLineColor [UIColor whiteColor]
 
 #define kClearColor [UIColor clearColor]
 
@@ -169,6 +181,9 @@
 #define kBlueColor [UIColor blueColor]
 
 #define kRedColor [UIColor redColor]
+
+#define kTableColor [UIColor redColor]
+
 
 
 
@@ -250,6 +265,7 @@ return object;\
 
 
 #endif /* define_h */
+
 
 
 </string>
