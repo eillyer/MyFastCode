@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYGCDINOUTINOUTEND</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//多网络全部完成 回调
+    dispatch_queue_t queueE = dispatch_queue_create("group.queue", DISPATCH_QUEUE_CONCURRENT);
+    //一个线程组
+    dispatch_group_t groupE = dispatch_group_create();
+    dispatch_group_async(groupE, queueE, ^{
+        //进入
+        dispatch_group_enter(groupE);
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            //banner
+            [NetWorkTo toapp_index_ad_imgsVC:nil Success:^(NSDictionary *dict) {
+
+                NSLog(@"%@",dict);
+                NSLog(@"✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️");
+                
+                dispatch_group_leave(groupE);
+
+            } error:^(NSString *error) {
+                NSLog(@"%@",error);
+                dispatch_group_leave(groupE);
+
+            }];
+            //离开
+//            dispatch_group_leave(groupE);
+        });
+    });
+
+    dispatch_group_async(groupE, queueE, ^{
+        //模拟网络请求2
+        dispatch_group_enter(groupE);
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            [NetWorkTo toapp_index_navigationVC:nil Success:^(NSDictionary *dict) {
+                NSLog(@"%@",dict);
+                NSLog(@"👱👱👱👱👱👱👱👱👱👱👱👱👱👱👱👱👱👱👱");
+                dispatch_group_leave(groupE);
+
+            } error:^(NSString *error) {
+                NSLog(@"%@",error);
+                dispatch_group_leave(groupE);
+            }];
+        });
+    });
+
+    dispatch_group_notify(groupE, dispatch_get_main_queue(), ^{
+        //最终完成
+        NSLog(@"两个都成功了");
+        success();
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>ACF7142F-559B-45E2-B091-D4353A2FF1EE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>GCD 多网络数据处理 OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MY GCD 多网络数据处理</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

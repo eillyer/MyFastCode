@@ -36,6 +36,33 @@
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
+
+//适配iPhone
+//判断是否是ipad
+#define isPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+//判断iPhone4系列
+#define xm_iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) &amp;&amp; !isPad : NO)
+//判断iPhone5系列
+#define xm_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) &amp;&amp; !isPad : NO)
+//判断iPhone6系列
+#define xm_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) &amp;&amp; !isPad : NO)
+//判断iphone6+系列
+#define xm_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) &amp;&amp; !isPad : NO)
+//判断iPhoneX
+#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) &amp;&amp; !isPad : NO)
+//判断iPHoneXr
+#define IS_IPHONE_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) &amp;&amp; !isPad : NO)
+//判断iPhoneXs
+#define IS_IPHONE_Xs ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) &amp;&amp; !isPad : NO)
+//判断iPhoneXs Max
+#define IS_IPHONE_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) &amp;&amp; !isPad : NO)
+
+#define IphoneStatusBarHeight ((IS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || IS_IPHONE_Xs== YES || IS_IPHONE_Xs_Max== YES) ? 44.0 : 20.0)
+#define SafeAreaTopHeight ((IS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || IS_IPHONE_Xs== YES || IS_IPHONE_Xs_Max== YES) ? 88.0 : 64.0)
+#define SafeAreaBottomHeight ((IS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || IS_IPHONE_Xs== YES || IS_IPHONE_Xs_Max== YES) ? 83.0 : 49.0)
+
+#define kTabBarHeight 0
+
 #define kFWColorGreen [UIColor colorWithRed:25/255.0 green:180.0/255 blue:145.0/255 alpha:1]
 #define kFWColorgran [UIColor colorWithRed:182/255.0 green:182.0/255 blue:182.0/255 alpha:1]
 #define kFWColorErweima [UIColor greenColor]//二维码边角颜色
@@ -52,8 +79,13 @@
 #define kMJRefreshNameReadly @"准备加载数据"
 
 // 颜色
+// 颜色
 #define kRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define kRGB(r, g, b) RGBA(r, g, b,1.0)
+#define kColorHex(s)  [UIColor colorWithRed:(((s &amp; 0xFF0000) &gt;&gt; 16))/255.0 green:(((s &amp;0xFF00) &gt;&gt;8))/255.0 blue:((s &amp;0xFF))/255.0 alpha:1.0]
+
+#import "UIColor+color.h"
+#define kColorWithHex(color) [UIColor colorWithHexString:color alpha:1]
 
 //地图
 #define kMapZoom 8.345
@@ -61,10 +93,17 @@
 
 #define kSoundName @"ReceivedMessage"
 
+#define kAlertTime 1.0
+
 
 #import "UIImage+image.h"
+#import "UIView+layerView.h"
 #import "NSString+NowDate.h"
 #import "NetWorkTo.h"
+#import "AppControl.h"
+#import "UserInfoModel.h"
+#import "UserInfoManager.h"
+#import &lt;UIImageView+WebCache.h&gt;
 
 
 #define kBannerArr @[@"banner2a",@"banner1a",@"banner3a",@"banner4a"]
@@ -77,6 +116,7 @@
 #define define_h
 
 //获取系统对象
+#define kUserInfo [UserInfoModel sharedUserInfoModel]
 
 #define kApplication [UIApplication sharedApplication]
 
@@ -90,14 +130,7 @@
 
 #define kNotificationCenter [NSNotificationCenter defaultCenter]
 
-//获取屏幕宽高
 
-
-#define kScreen_Bounds [UIScreen mainScreen].bounds
-
-#define Iphone6ScaleWidth KScreenWidth/375.0
-
-#define Iphone6ScaleHeight KScreenHeight/667.0
 
 //根据ip6的屏幕来拉伸
 
@@ -166,7 +199,7 @@
 
 #define kTextColor [UIColor whiteColor]
 
-#define kLineColor [UIColor whiteColor]
+#define kLineColor kColorWithHex(@"#e1e1e1")
 
 #define kClearColor [UIColor clearColor]
 
@@ -182,7 +215,7 @@
 
 #define kRedColor [UIColor redColor]
 
-#define kTableColor [UIColor redColor]
+#define kTableColor [UIColor groupTableViewBackgroundColor]
 
 
 
@@ -203,23 +236,23 @@
 
 //数据验证
 
-#define StrValid(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSString class]]&amp;&amp; ![f isEqualToString:@""])
+#define kStrValid(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSString class]]&amp;&amp; ![f isEqualToString:@""])
 
-#define SafeStr(f) (StrValid(f)?f:@"")
+#define kSafeStr(f) (StrValid(f)?f:@"")
 
-#define HasString(str,eky) ([str rangeOfString:key].location!=NSNotFound)
+#define kHasString(str,eky) ([str rangeOfString:key].location!=NSNotFound)
 
-#define ValidStr(f) StrValid(f)
+#define kValidStr(f) StrValid(f)
 
-#define ValidDict(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSDictionary class]])
+#define kValidDict(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSDictionary class]])
 
-#define ValidArray(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSArray class]]&amp;&amp;[f count]&gt;0)
+#define kValidArray(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSArray class]]&amp;&amp;[f count]&gt;0)
 
-#define ValidNum(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSNumber class]])
+#define kValidNum(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSNumber class]])
 
-#define ValidClass(f,cls) (f!=nil &amp;&amp;[f isKindOfClass:[cls class]])
+#define kValidClass(f,cls) (f!=nil &amp;&amp;[f isKindOfClass:[cls class]])
 
-#define ValidData(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSData class]])
+#define kValidData(f) (f!=nil &amp;&amp;[f isKindOfClass:[NSData class]])
 
 //获取一段时间间隔
 

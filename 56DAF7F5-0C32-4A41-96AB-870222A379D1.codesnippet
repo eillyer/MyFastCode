@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MyAlert</string>
+	<string>qwe</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIAlertView *&lt;#alert#&gt; = [[UIAlertView alloc] initWithTitle:&lt;#@"温馨提示"#&gt; message:&lt;#@"提示内容"#&gt; delegate:&lt;#self#&gt; cancelButtonTitle:&lt;#@"取消"#&gt; otherButtonTitles:&lt;#@"按钮1"#&gt;,&lt;#@"按钮2"#&gt;, nil];
-[&lt;#alert#&gt; show];</string>
+	<string>self.window = [[UIWindow alloc] init];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A5CF8E1A-BD79-4BC2-94F7-43AEC99DDE47</string>
+	<string>56DAF7F5-0C32-4A41-96AB-870222A379D1</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>弹出提示框</string>
+	<string>qwe</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY7.0提示框</string>
+	<string>qwe</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

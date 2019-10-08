@@ -3,24 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYSWIFTRED</string>
+	<string>cell有多个xib</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        let view = UIView.init(frame: .init(x: 10, y: 210, width: 200, height: 40));
-//        view.setCAColorStarToEnd(starColor:.white, endColor: .blue, isH: false)
-        view.backgroundColor = .red;
-        self.view.addSubview(view);</string>
+	<string>&lt;#AfterSelasDetailCell#&gt; * cell = (&lt;#AfterSelasDetailCell#&gt; *)[tableView dequeueReusableCellWithIdentifier:@"&lt;#AfterSelasDetailCell2#&gt;"];
+    if (!cell){
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"&lt;#AfterSelasDetailCell#&gt;" owner:nil options:nil] firstObject];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>92F7237C-D629-4D21-A9EE-8838D4BB206C</string>
+	<string>322918A9-B706-4D1F-B957-77D03AEA25EF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>红方块swift</string>
+	<string>在cell内部注册cell</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY红方块</string>
+	<string>MYCELLREGIST</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

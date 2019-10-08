@@ -3,24 +3,39 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYSWIFTRED</string>
+	<string>MYGCDINININEND</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        let view = UIView.init(frame: .init(x: 10, y: 210, width: 200, height: 40));
-//        view.setCAColorStarToEnd(starColor:.white, endColor: .blue, isH: false)
-        view.backgroundColor = .red;
-        self.view.addSubview(view);</string>
+	<string>//GCD 并发 最终完成调用
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_queue_create("com.gcd-group.www", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_group_async(group, queue, ^{
+        
+    });
+    
+    dispatch_group_async(group, queue, ^{
+
+    });
+    
+    dispatch_group_async(group, queue, ^{
+
+    });
+    
+    dispatch_group_notify(group, queue, ^{
+
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>92F7237C-D629-4D21-A9EE-8838D4BB206C</string>
+	<string>C3409944-19E9-47C7-81BC-5DB7CA154FDB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>红方块swift</string>
+	<string>并发最终完成再调用 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY红方块</string>
+	<string>MY GCD 并发 最终完成再调用</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

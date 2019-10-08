@@ -3,21 +3,35 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYSTRING</string>
+	<string>MYSWIFTGCD</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>"\(&lt;#NAME#&gt;)"</string>
+	<string>        //创建组
+        let dGroup = DispatchGroup()
+        //进入组
+        dGroup.enter()
+        //离开组
+        dGroup.leave()
+        /*
+         每次任务都进入和离开操作
+         
+         */
+
+        //获得最终的完成数据处理
+        dGroup.notify(queue: DispatchQueue.main) {
+            print("全部数据都到了")
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DCADA86F-70EC-4A05-833F-10394C878061</string>
+	<string>47C598A8-350B-4372-9DA6-DB30A3DC5593</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>字符串 swift</string>
+	<string>多网络的数据处理 swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY 字符串</string>
+	<string>MY GCD多网络请求并发</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

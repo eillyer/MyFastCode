@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYALERTVC</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"提示" message:@"请选择性别" preferredStyle:UIAlertControllerStyleActionSheet];
+
+        
+        UIAlertAction *nan = [UIAlertAction actionWithTitle:@"男" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+            model.subTitle = @"男";
+            [self.tableView reloadData];
+        }];
+        UIAlertAction *nv = [UIAlertAction actionWithTitle:@"女" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+            model.subTitle = @"女";
+            [self.tableView reloadData];
+
+        }];
+        UIAlertAction *bao = [UIAlertAction actionWithTitle:@"保密" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+            model.subTitle = @"保密";
+            [self.tableView reloadData];
+            
+        }];
+        
+        
+        [vc addAction:nan];
+        [vc addAction:nv];
+        [vc addAction:bao];
+        [vc addAction:cancel];
+        
+        [self presentViewController:vc animated:YES completion:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DE1BB8A0-1F94-420A-A624-E83F258E9FA8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>提示框oc 选择</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MY 提示框</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

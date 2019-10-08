@@ -13,7 +13,26 @@
     &lt;#枚举1#&gt;,
     &lt;#枚举2#&gt;
 };
-@property (nonatomic,assign) &lt;#定义名#&gt; &lt;#属性名#&gt;;</string>
+@property (nonatomic,assign) &lt;#定义名#&gt; &lt;#属性名#&gt;;
+
+
+//使用字符表示
+// 先定义一个常见的枚举
+typedef NS_ENUM(NSUInteger, KLType) {
+    KLTypeRed = 1,
+    KLTypeGreen = 2,
+    KLTypeOrange = 3,
+};
+// 这个是 Map NSString * 类型的数组
+NSString *KLTypeStringMap[] = {
+    [KLTypeRed] = @"红色",
+    [KLTypeGreen] = @"绿色",
+    [KLTypeOrange] = @"橘色"
+};
+
+// 使用：
+KLTypeStringMap[KLTypeRed];// 枚举值
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>BE08E5D6-4CFB-4618-B2DE-DA2FC8416DA8</string>
 	<key>IDECodeSnippetLanguage</key>

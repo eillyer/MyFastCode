@@ -3,22 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MyAlert</string>
+	<string>MYNETWORKTO</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIAlertView *&lt;#alert#&gt; = [[UIAlertView alloc] initWithTitle:&lt;#@"温馨提示"#&gt; message:&lt;#@"提示内容"#&gt; delegate:&lt;#self#&gt; cancelButtonTitle:&lt;#@"取消"#&gt; otherButtonTitles:&lt;#@"按钮1"#&gt;,&lt;#@"按钮2"#&gt;, nil];
-[&lt;#alert#&gt; show];</string>
+	<string>+ (void)to&lt;#Shop_closerShops#&gt;:(UIViewController *)vc
+&lt;#lng#&gt;:(&lt;#NSString *#&gt;)&lt;#lng#&gt;
+                      page:(NSInteger)page
+                   Success:(void(^)(NSDictionary *dict))successBlock
+                     error:(void(^)(NSString *error))errorBlock;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A5CF8E1A-BD79-4BC2-94F7-43AEC99DDE47</string>
+	<string>57764664-ACD3-4383-BD47-014830E73AA9</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>弹出提示框</string>
+	<string>上层网络方法的声明 OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY7.0提示框</string>
+	<string>MY 网络方法声明</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -13,6 +13,10 @@
     //我们这里需要把这个xib加载出来而这个xib的所拥有者就是当前的对象`instantiateWithOwner:`这个方法就是对此xib文件进行拥有者关联，关联这个xib是属于哪一个类的我们当然这是self
     &lt;#view的类#&gt; *View = [[UINib nibWithNibName:@"&lt;#view的类#&gt;" bundle:nil]instantiateWithOwner:self options:nil].lastObject;
     return View;
+}
+- (void)layoutSubviews{
+    self.frame = CGRectMake(0, 0, DEVICE_WIDTH, DEVICE_HEIGHT);
+    [super layoutSubviews];
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>80FDA12A-1282-42B7-A929-1CCD98CA130B</string>

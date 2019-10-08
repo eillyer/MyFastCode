@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MYNETWORKPOSTMYX</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSMutableDictionary * dic = @{}.mutableCopy;
+dic[@"&lt;#commentSecond#&gt;"] = &lt;#commentSecond#&gt;;
+dic[@"&lt;#content#&gt;"] = &lt;#content#&gt;;
+dic[@"&lt;#resId#&gt;"] = &lt;#resId#&gt;;
+dic[@"&lt;#resType#&gt;"] = &lt;#resType#&gt;;
+dic[@"&lt;#rootCommentId#&gt;"] = &lt;#rootCommentId#&gt;;
+dic[@"&lt;#userId#&gt;"] = &lt;#kUserInfo.userId#&gt;;
+[XM_NetworkTool.sharedManager postFeed:dic requestType:XM_Json url:&lt;#API_user_login_URL#&gt;  success:^(NSDictionary * _Nonnull dicInfo) {
+        successBlock(dicInfo);
+    } failure:^(NSString * _Nonnull error) {
+        errorBlock(error);
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FCD10BD7-8D8D-4E80-9066-7DED4A6CEAE0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>myx post temp</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My 网络方法实现&lt;POST MYX&gt;</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
