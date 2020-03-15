@@ -14,7 +14,7 @@
     //1.1设置弹出世间
     noti.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
     //1.2设置弹出内容
-    noti.alertBody = @"弹出内容：阿斯顿发斯蒂芬";
+    noti.alertBody = @"弹出内容：123";
     //1.3设置锁屏状态下显示的文字
     noti.alertAction = @"快速打开";
     
