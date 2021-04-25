@@ -3,24 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYBLOCKPROPERTY</string>
+	<string>MYNAVICLEAR</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef void(^&lt;##&gt;Block)(NSString * _Nullable action,BOOL isOK);
-
-/// 回调属性
-@property (nonatomic,copy) &lt;##&gt;Block sendValueBlock;</string>
+	<string>- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];//
+//    self.automaticallyAdjustsScrollViewInsets = YES;
+    self.navigationController.navigationBar.translucent = YES;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F248C98D-778C-44B9-AEB2-82391F836C7E</string>
+	<string>16E1DD5F-5B97-4271-9C22-A55559B59FF0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>属性里面传参数 OC</string>
+	<string>设置导航栏透明</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY block属性申明</string>
+	<string>MY 导航透明</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

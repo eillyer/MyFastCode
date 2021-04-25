@@ -9,31 +9,28 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"提示" message:@"请选择性别" preferredStyle:UIAlertControllerStyleActionSheet];
+	<string>UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"&lt;#提示#&gt;" message:@"&lt;##&gt;" preferredStyle:UIAlertControllerStyleActionSheet];
 
-        
-        UIAlertAction *nan = [UIAlertAction actionWithTitle:@"男" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
-            model.subTitle = @"男";
-            [self.tableView reloadData];
-        }];
-        UIAlertAction *nv = [UIAlertAction actionWithTitle:@"女" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
-            model.subTitle = @"女";
-            [self.tableView reloadData];
+__weak typeof (self) weakSelf = self;
+UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"&lt;#确定#&gt;" style:(&lt;#UIAlertActionStyleDestructive#&gt;) handler:^(UIAlertAction * _Nonnull action) {
 
-        }];
-        UIAlertAction *bao = [UIAlertAction actionWithTitle:@"保密" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
-            model.subTitle = @"保密";
-            [self.tableView reloadData];
-            
-        }];
-        
-        
-        [vc addAction:nan];
-        [vc addAction:nv];
-        [vc addAction:bao];
-        [vc addAction:cancel];
-        
-        [self presentViewController:vc animated:YES completion:nil];</string>
+}];
+UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"&lt;#取消#&gt;" style:(&lt;#UIAlertActionStyleDefault#&gt;) handler:^(UIAlertAction * _Nonnull action) {
+
+    
+}];
+UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"&lt;#取消#&gt;" style:(&lt;#UIAlertActionStyleCancel#&gt;) handler:^(UIAlertAction * _Nonnull action) {
+
+    
+}];
+
+
+
+[vc addAction:action1];
+[vc addAction:action2];
+[vc addAction:cancel];
+
+[self presentViewController:vc animated:YES completion:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>DE1BB8A0-1F94-420A-A624-E83F258E9FA8</string>
 	<key>IDECodeSnippetLanguage</key>

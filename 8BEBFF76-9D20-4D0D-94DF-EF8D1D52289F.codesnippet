@@ -3,25 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYNETWORKTO</string>
+	<string>MYPUSHVC</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (void)to&lt;#Shop_closerShops#&gt;:(UIViewController *)vc
-&lt;#lng#&gt;:(&lt;#NSString *#&gt;)&lt;#lng#&gt;
-                      page:(NSInteger)page
-                   Success:(void(^)(NSDictionary *dict))successBlock
-                     error:(void(^)(NSString *error))errorBlock;</string>
+	<string>&lt;# #&gt; *vc = [QMSShopEarningsWaitDetailVC new];
+    [self.rt_navigationController pushViewController:vc animated:YES complete:nil];
+    
+//    [self.rt_navigationController pushViewController:NSClassFromString(@"&lt;#  #&gt;").new animated:YES complete:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>57764664-ACD3-4383-BD47-014830E73AA9</string>
+	<string>8BEBFF76-9D20-4D0D-94DF-EF8D1D52289F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>上层网络方法的声明 OC</string>
+	<string>push的基本方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY 网络方法声明</string>
+	<string>My push 一个控制器</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,24 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>MYBLOCKPROPERTY</string>
+	<string>MYMODEL</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef void(^&lt;##&gt;Block)(NSString * _Nullable action,BOOL isOK);
+	<string>#import "BaseModel.h"
 
-/// 回调属性
-@property (nonatomic,copy) &lt;##&gt;Block sendValueBlock;</string>
+@interface &lt;# #&gt;Model : BaseModel
+
+@end
+
+@implementation &lt;# #&gt;Model
+
+@end
+
+@property (nonatomic,strong) &lt;# #&gt;Model * model;
+
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F248C98D-778C-44B9-AEB2-82391F836C7E</string>
+	<string>D7A7C438-6598-4E9E-BD69-4A33D0591C92</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>属性里面传参数 OC</string>
+	<string>局部设置一个model</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY block属性申明</string>
+	<string>My Model局部设置</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
